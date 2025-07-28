@@ -35,7 +35,7 @@ jobs:
           paths: |
             package.json
       - name: Run git-cliff
-        uses: tj-actions/git-cliff@v1
+        uses: tj-actions/git-cliff@v2
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7.0.8
         with:
