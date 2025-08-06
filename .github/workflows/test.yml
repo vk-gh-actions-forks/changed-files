@@ -128,7 +128,7 @@ jobs:
           path: dir1
 
       - name: Download build assets
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: build-assets
           path: dir1/dist
@@ -154,7 +154,7 @@ jobs:
           bash
 
       - name: Download build assets
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: build-assets
           path: dir2/dist
@@ -202,7 +202,7 @@ jobs:
           fetch-depth: 0
 
       - name: Download build assets
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: build-assets
 
@@ -262,7 +262,7 @@ jobs:
           fetch-depth: 0
 
       - name: Download build assets
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: build-assets
 
@@ -306,7 +306,7 @@ jobs:
           fetch-depth: 0
 
       - name: Download build assets
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: build-assets
 
@@ -345,7 +345,7 @@ jobs:
           fetch-depth: ${{ matrix.fetch-depth }}
 
       - name: Download build assets
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: build-assets
 
@@ -378,7 +378,7 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Download build assets
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: build-assets
 
@@ -414,7 +414,7 @@ jobs:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
 
       - name: Download build assets
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: build-assets
 
@@ -440,7 +440,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Download build assets
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: build-assets
 
@@ -495,7 +495,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Download build assets
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: build-assets
 
@@ -555,7 +555,7 @@ jobs:
           path: dir1
 
       - name: Download build assets
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: build-assets
           path: dir1/dist
@@ -586,7 +586,7 @@ jobs:
           fetch-depth: 0
 
       - name: Download build assets
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: build-assets
           path: dist
@@ -624,7 +624,7 @@ jobs:
           path: dir1
 
       - name: Download build assets
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: build-assets
           path: dir1/dist
@@ -662,7 +662,7 @@ jobs:
           fetch-depth: ${{ matrix.fetch-depth }}
 
       - name: Download build assets
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: build-assets
 
@@ -728,7 +728,7 @@ jobs:
           fetch-depth: ${{ matrix.fetch-depth }}
 
       - name: Download build assets
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: build-assets
 
@@ -823,7 +823,7 @@ jobs:
           fetch-depth: ${{ matrix.fetch-depth }}
 
       - name: Download build assets
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: build-assets
 
@@ -1127,7 +1127,7 @@ jobs:
           fetch-depth: ${{ matrix.fetch-depth }}
   
       - name: Download build assets
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: build-assets
 
@@ -1178,7 +1178,7 @@ jobs:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
           fetch-depth: ${{ matrix.fetch-depth }}
       - name: Download build assets
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: build-assets
       - name: Dump GitHub context
