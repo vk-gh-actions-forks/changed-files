@@ -99,7 +99,7 @@ jobs:
           branch: ${{ github.head_ref }}
 
       - name: Upload build assets
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: build-assets
           path: dist
